@@ -3,9 +3,9 @@ node_modules
 npm-debug.log
 coverage
 .nyc_output
-dist
-build
-lib
+#dist
+#build
+#lib
 .vscode
 .idea
 .history
