@@ -1,5 +1,4 @@
 import { z } from "zod";
-export declare const maybe: <T extends z.ZodTypeAny>(schema: T) => z.ZodOptional<z.ZodNullable<T>>;
 export declare const simplifiedJSDocTagSchema: z.ZodObject<{
     name: z.ZodString;
     value: z.ZodOptional<z.ZodString>;
