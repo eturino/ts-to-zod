@@ -19,10 +19,10 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.package.json",
-    "prepublishOnly": "yarn test:ci && rimraf lib && yarn build",
+    "prepublishOnly": "$npm_execpath run test:ci && rimraf lib && $npm_execpath run build",
     "format": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix && prettier \"**/*.{js,jsx,ts,tsx,json}\" --write",
     "test": "jest",
-    "test:ci": "jest --ci --coverage && yarn gen:all && tsc --noEmit",
+    "test:ci": "jest --ci --coverage && yarn run gen:all && tsc --noEmit",
     "type-check": "tsc --noEmit",
     "gen:all": "./bin/run --all",
     "gen:example": "./bin/run --config example",
